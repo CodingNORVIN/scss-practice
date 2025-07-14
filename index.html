@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About SCSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <style>
+    button {
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+    }
+    pre {
+      background: #f5f7fa;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>SCSS: CSS with Superpowers</h1>
+        <p>A modern preprocessor that makes your styles cleaner, smarter, and more maintainable.</p>
+      </div>
+    </header>
+
+    <section>
+      <div>
+        <h2>What is SCSS?</h2>
+        <p>
+          SCSS (Sassy CSS) is a syntax of Sass that fully supports traditional CSS but adds powerful features such as variables,
+          nesting, mixins, functions, and modular imports. It helps developers write efficient, reusable, and scalable stylesheets.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>Key Features</h2>
+        <ul>
+          <li>Variables for consistent values</li>
+          <li>Nesting for cleaner hierarchy</li>
+          <li>Mixins for reusable chunks</li>
+          <li>Functions for dynamic logic</li>
+          <li>Partials and importing for modularity</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>SCSS Example</h2>
+        <button id="toggleBtn">Show CSS</button>
+        <pre><code id="codeBlock">
+$primary-color: #3498db;
+
+.button {
+  background: $primary-color;
+  border-radius: 5px;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+        </code></pre>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <p>© 2025 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./scripts/script.js" defer></script>
+</body>
+</html>

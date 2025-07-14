@@ -1,0 +1,66 @@
+
+// TYPOGRAPHY
+
+%heading-xl {
+  font-size: $font-size-xxl;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+%heading-lg {
+  font-size: $font-size-xl;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+%heading-md {
+  font-size: $font-size-lg;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+%text-base {
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: $line-height-base;
+  color: $color-text;
+}
+
+%text-muted {
+  color: $color-muted;
+  font-size: $font-size-base;
+  line-height: 1.5;
+}
+
+// CONTAINERS & LAYOUT
+
+%container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 $space-md;
+}
+
+%section {
+  padding: $space-lg 0;
+}
+
+
+// CARDS & BLOCKS
+
+
+%card {
+  background: $color-bg;
+  border: $border-width solid $color-border;
+  border-radius: $radius-md;
+  padding: $space-md;
+  box-shadow: $shadow-sm;
+}
+
+%code-block {
+  background: $color-code-bg;
+  border-radius: $radius-sm;
+  padding: $space-sm;
+  font-family: monospace;
+  overflow-x: auto;
+}
+

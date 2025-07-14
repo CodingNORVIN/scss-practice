@@ -1,0 +1,64 @@
+
+// Media Queries
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}
+
+// Flex Centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Grid Columns
+@mixin grid-columns($cols, $gap: $space-md) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  gap: $gap;
+}
+
+
+// Button Styles
+@mixin button-style($bg: $color-primary, $text: #fff) {
+  background-color: $bg;
+  color: $text;
+  padding: $space-sm $space-md;
+  border-radius: $radius-sm;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+}
+
+// ─────────────────────────────
+// 🌫 Box Shadow Levels
+// ─────────────────────────────
+@mixin shadow($level: 1) {
+  @if $level == 1 {
+    box-shadow: $shadow-sm;
+  } @else if $level == 2 {
+    box-shadow: $shadow-md;
+  }
+}

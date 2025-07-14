@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+section p,
+section ul {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+footer p, header p {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+footer, section, header {
+  padding: 4rem 0;
+}
+
+section pre {
+  background: #f5f7fa;
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: fadeIn 1s ease forwards;
+}
+
+main {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+header {
+  text-align: center;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+header h1 {
+  margin-bottom: 1rem;
+}
+header p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+section h2 {
+  margin-bottom: 1rem;
+}
+section p,
+section ul {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+section ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+section ul li {
+  margin-bottom: 0.5rem;
+}
+section pre {
+  margin-top: 1rem;
+}
+section code {
+  font-family: monospace;
+  background-color: #f5f7fa;
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2rem;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+footer p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 720px;
+  }
+  section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    max-width: 900px;
+  }
+  section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}/*# sourceMappingURL=main.css.map */
