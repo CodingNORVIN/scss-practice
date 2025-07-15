@@ -1,0 +1,141 @@
+📁 SCSS Notes for Junior Frontend Developer
+==========================================
+
+1. What is SCSS?
+-----------------
+- SCSS (Sassy CSS) is a syntax of Sass (Syntactically Awesome Style Sheets).
+- It's a CSS preprocessor that adds power and elegance to CSS.
+- Uses .scss file extension.
+- Compatible with all CSS.
+
+2. Variables
+------------
+$primary-color: #3498db;
+$font-stack: 'Segoe UI', sans-serif;
+
+body {
+  color: $primary-color;
+  font-family: $font-stack;
+}
+
+✅ Use variables to avoid repetition and ease updates.
+
+3. Nesting
+----------
+nav {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+✅ Helps organize code, but don’t over-nest (max 3 levels).
+
+4. Partials & Import
+---------------------
+- Break styles into multiple small files.
+- Use _filename.scss for partials.
+
+Example:
+// _buttons.scss
+.button {
+  padding: 10px;
+}
+
+// main.scss
+@import 'buttons';
+
+5. Mixins
+---------
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  @include flex-center;
+}
+
+✅ Reuse blocks of code with parameters if needed.
+
+6. Extend/Inheritance
+----------------------
+%message {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.alert {
+  @extend %message;
+  background: pink;
+}
+
+7. Operators
+------------
+.container {
+  width: 100% / 3; // 33.333%
+}
+
+✅ SCSS supports math operations: +, -, *, /, %
+
+8. Functions
+------------
+$base-size: 16px;
+
+@function em($px) {
+  @return $px / $base-size * 1em;
+}
+
+h1 {
+  font-size: em(32px);
+}
+
+9. Conditional Logic
+---------------------
+@mixin theme($mode) {
+  @if $mode == light {
+    background: white;
+  } @else {
+    background: black;
+  }
+}
+
+10. Loops (For, Each, While)
+-----------------------------
+@for $i from 1 through 5 {
+  .m-#{$i} {
+    margin: #{$i * 10}px;
+  }
+}
+
+11. SCSS vs CSS
+----------------
+| Feature       | CSS     | SCSS        |
+|---------------|---------|-------------|
+| Variables     | ❌      | ✅          |
+| Nesting       | ❌      | ✅          |
+| Functions     | ❌      | ✅          |
+| Reusability   | ❌      | ✅ (Mixins) |
+| Logic/Loops   | ❌      | ✅          |
+
+12. Tools to Compile SCSS
+--------------------------
+- VS Code + Live Sass Compiler
+- Webpack + sass-loader
+- Node-sass or Dart Sass via CLI
+
+Tips for Junior Devs
+---------------------
+- Use meaningful variables.
+- Structure files (components, layout, base, etc.).
+- Don’t over-nest; keep code readable.
+- Test outputs in compiled CSS.
+ 
