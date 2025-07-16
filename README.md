@@ -19,9 +19,19 @@ A simple website that explains SCSS and lets users toggle between SCSS and CSS c
 If the hosted demo is not available, see the interactive preview below:
 
 <p align="center">
-  <img src="https://s3.ezgif.com/tmp/ezgif-33d5a26c18a5bb.gif" alt="Demo GIF" style="margin: 0 10px; max-width: 100%; height: auto;" />
+  <img src="https://github.com/user-attachments/assets/e00f2d5b-0505-4a6a-93ba-5fd02d9cedb1" alt="Demo GIF" />
 </p>
+
 
 ## License
 
 MIT © nor1vin
+
+
+
+
+
+
+
+
+
