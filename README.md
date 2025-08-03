@@ -25,7 +25,7 @@ If the hosted demo is not available, see the interactive preview below:
 
 ## License
 
-MIT © nor1vin
+MIT © CodingNORVIN
 
 
 
